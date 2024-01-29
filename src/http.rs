@@ -1,6 +1,6 @@
 use reqwest::{Client, Response};
 
-/// Base object to query CoinGecko api.
+/// Base object to query http request.
 #[derive(Default)]
 pub struct HttpQuerier {
     url: String,
