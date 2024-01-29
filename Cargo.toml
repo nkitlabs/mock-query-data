@@ -1,5 +1,5 @@
 [package]
-name = "mock-query-data"
+name = "test-query-data"
 version = "0.1.0"
 edition = "2021"
 authors = ["NKitlabs <nkitlabs@github.com>"]
@@ -8,9 +8,9 @@ readme = "README.md"
 description ="""
 This crate is only for testing not for production use.
 """
-repository = "https://github.com/nkitlabs/mock-query-data"
+repository = "https://github.com/nkitlabs/test-query-data"
 categories = ["api-bindings"]
-keywords = ["mock", "query_data"]
+keywords = ["test", "query_data"]
 
 [features]
 default = []
