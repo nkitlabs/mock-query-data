@@ -21,3 +21,7 @@ impl HttpQuerier {
         self.client.get(&url).send().await
     }
 }
+
+pub fn minus(left: usize, right: usize) -> usize {
+    left - right
+}

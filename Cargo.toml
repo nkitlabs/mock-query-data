@@ -25,3 +25,6 @@ reqwest = "0.11.23"
 serde = { version = "1.0.196", features = ["derive"] }
 tokio = "1.35.1"
 tokio-tungstenite = { version = "0.21.0", features = ["native-tls"] }
+
+[dev-dependencies]
+test-query-data = { path = ".", features = ["full"]}

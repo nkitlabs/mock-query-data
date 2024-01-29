@@ -1,0 +1,29 @@
+[advisories]
+vulnerability = "deny"
+unmaintained = "warn"
+notice = "warn"
+ignore = []
+
+[licenses]
+unlicensed = "warn"
+allow = ["Apache-2.0", "MIT"]
+deny = []
+copyleft = "warn"
+allow-osi-fsf-free = "either"
+confidence-threshold = 0.8
+
+[bans]
+multiple-versions = "deny"
+highlight = "all"
+skip-tree = [
+    # some projects also skip this tree, e.g.
+    # https://github.com/tokio-rs/axum/blob/530aa5530cde4eebfdbf78d59710472b8e360e15/deny.toml#L19-L35
+    { name = "hyper" },
+    { name = "tempfile" },
+    { name = "socket2" },
+]
+
+[sources]
+unknown-registry = "warn"
+unknown-git = "warn"
+allow-git = []
