@@ -1,6 +1,6 @@
 [package]
 name = "test-query-data"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["NKitlabs <nkitlabs@github.com>"]
 license = "MIT"
@@ -24,4 +24,4 @@ http = []
 reqwest = "0.11.23"
 serde = { version = "1.0.196", features = ["derive"] }
 tokio = "1.35.1"
-tokio-tungstenite = "0.21.0"
+tokio-tungstenite = { version = "0.21.0", features = ["native-tls"] }
