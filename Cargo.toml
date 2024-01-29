@@ -1,0 +1,23 @@
+[package]
+name = "mock-query-data"
+version = "0.1.0"
+edition = "2021"
+authors = ["NKitlabs <nkitlabs@github.com>"]
+license = "MIT"
+readme = "README.md"
+description ="""
+This crate is only for testing not for production use.
+"""
+repository = "https://github.com/nkitlabs/mock-query-data"
+categories = ["api-bindings"]
+keywords = ["mock", "query_data"]
+
+[features]
+default = []
+full = ["websocket", "http"]
+websocket = ["websocket"]
+http = ["http"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
