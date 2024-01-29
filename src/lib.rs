@@ -1,3 +1,6 @@
+pub mod http;
+pub mod websocket;
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
